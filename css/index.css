@@ -1,0 +1,435 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.7px;
+  /* display: flex;
+  flex-direction: column; */
+  position: relative;
+
+
+}
+:root {
+  --red:#DC0714;
+  --grem: #00616D;
+  --grem-5: #00C9B7;
+  --plomo: #9D9898;
+}
+
+
+
+
+/* aqui comienza el header */
+.header {
+  background-image: linear-gradient(to right, #017b8b, #00444d);
+  text-align: center;
+}
+.header .container {
+  padding: 10px 10px;
+  align-items: center;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+.header-img {
+  margin: 0 10px;
+}
+.nav {
+  border-radius: 10px;
+  background-color: var(--grem);
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  right: -100vw;
+  padding: 20px;
+  padding-bottom: 100px;
+  transition: .3s;
+}
+.nav-active {
+  right: 5px;
+}
+.nav ul {
+  /* display: flex; */
+  /* margin: 0 10px; */
+  padding: 0;
+}
+.nav li {
+  margin: 20px 0;
+  margin-inline-start: 5px;
+  list-style: none;
+  box-sizing: border-box;
+}
+.nav a
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #00454e;
+}
+
+
+.nav a:hover {
+  color: white;
+  background: var(--red);
+}
+.active-cat {
+  cursor: pointer;
+}
+.active-cat img {
+  vertical-align: middle;
+}
+.er {
+  display: none;
+  padding: 0 0 0 70px;
+}
+.er a {
+  display: block;
+  width: 100px;
+  border-color: blanchedalmond;
+  margin-bottom: 20px;
+}
+.nav-activee {
+  display: block;
+}
+
+
+
+
+/* aqui comienza el main picture */
+.picture {
+  display: grid;
+  grid-template-columns: 1fr 1500px 1fr;
+  width: 100vw;
+}
+
+.picture-black {
+  background-color: #040001;
+}
+.picture-red {
+  background-color: #ee1c25;
+}
+.main-picture {
+  margin: 0;
+  width: 100vw;
+  max-width: 1500px;
+  line-height: 0;
+}
+.main-picture img {
+  width: 100%;
+}
+
+
+
+
+/* aqui comienza la seccion de motos */
+.motos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beneli {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  margin: 10px;
+  max-width: 1500px;
+
+}
+.beneli h2 {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00616D;
+}
+.beneli-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.beneli-card {
+  max-width: 150px;
+  flex-shrink: 0.5;
+  flex: 1;
+  display: flex;
+  flex-shrink: 0.5;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow:  10px 10px 20px #a5a5a5;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.beneli-card:hover {
+  border: 2px solid var(--grem);
+  box-shadow:  30px 30px 60px #646464;
+}
+.beneli-card img {
+  display: block;
+  text-align: center;
+  width: 120px;
+}
+.beneli-card a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  border: 3px solid var(--grem);
+  padding: 3px 15px 3px 15px;
+  text-decoration: none;
+  color: var(--grem);
+  border-radius: 5px;
+}
+.beneli-card p {
+  font-size: 13px;
+}
+.beneli-card a:hover {
+  background-image: linear-gradient(to right, #dc0714, #ec0045, #eb0078, #d100b2, #8d12eb);
+  color: white;
+  border-radius: 3px solid white;
+}
+.motos-link {
+justify-self: end;
+text-decoration: none;
+color: var(--red);
+padding: 5px 20px;
+box-shadow: 15px 15px 35px #000000;
+}
+.motos-link:hover {
+color: white;
+background-color: var(--red);
+padding: 5px 20px;
+box-shadow: 0px 0px 0px #000000;
+}
+
+/* aqui comienza el mensaje */
+.mensaje p {
+  text-align: center;
+  padding: 50px 10px;
+  max-width: 500px;;
+  font-size: 25px;
+  color: var(--grem);
+  margin: 0 auto;
+}
+
+
+
+/* aqui comienza los beneficios */
+.beneficios h2 {
+  font-size: 30px;
+  /* margin: 50px; */
+  font-style: italic;
+  font-weight: 300;
+}
+.beneficios-cont {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: linear-gradient(to top, #046875, #11c8e0);
+}
+.beneficios {
+  text-align: center;
+  color: white;
+  margin: 10px;
+  padding: 30px;
+  width: 1150px;
+  max-width: 1150px;
+}
+.beneficios-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+.abc {
+  display: none;
+}
+.beneficios-card p {
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+
+/* aqui comienza la parte del contacto */
+.contacto-cont {
+  padding: 10px 10px;
+}
+.contacto {
+  max-width: 1900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contacto-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 430px));
+  /* -webkit-grid-template-colums: repeat(auto-fit, minmax(300px, 450px)); */
+  justify-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.contacto-card {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid var(--plomo);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 0 20px;
+  /* max-width: 300px; */
+  display: grid;
+  grid-template-rows: auto auto 40px;
+  justify-content: center;
+}
+.contacto h3 {
+  color: var(--grem);
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+}
+.contacto-card p {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+}
+.contacto-card h4 {
+  color: #505050;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.contacto-card a {
+  border: 2px solid white;
+  color: var(--grem-5);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 25px;
+}
+.contacto-card a:hover {
+  border: 2px solid var(--grem-5);
+
+}
+
+
+/* aqui comienza el footer */
+.footer {
+  background-color: black;
+  color: var(--plomo);
+  padding: 40px 10px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer-cont {
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
+  place-items: center;
+  justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+/* call-contact */
+.call-contact {
+  margin-bottom: 70px;
+}
+.call-contact p {
+  font-size: 20px;
+  color: var(--plomo);
+  max-width: 350px;
+  margin-bottom: 40px;
+}
+.escribenos {
+  width: auto;
+  height: 80px;
+  font-size: 30px;
+  background-color: var(--grem);
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.escribenos:hover {
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.644);
+}
+.escribenos span {
+  color: white;
+
+}
+.escribenos img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+/* social-media */
+.social-media {
+  margin-bottom: 70px;
+}
+.social-media p {
+  margin-bottom: 40px;
+  font-size: 22px;
+  color: var(--grem-5);
+}
+.social-media figure {
+  margin: 0;
+}
+.social-media img:hover {
+  cursor: pointer;
+  box-shadow: 5px 2px 10px var(--grem-5);
+}
+.social-media figure img {
+  margin-right: 10px;
+  height: 50px;
+}
+/* footer nav */
+.footer-nav {
+  margin-bottom: 70px;
+  /* text-align: start; */
+}
+.footer-nav ul {
+  padding: 0;
+}
+.footer-nav li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.footer-nav li a {
+  color: var(--grem-5);                                  ;
+}
+/* footer-end */
+.footer-end {
+  font-size: 15px;
+  padding-top: 20px;
+  border-block-start: 1px solid var(--plomo);
+}
+.footer-end img {
+  background-color: white;
+  vertical-align: middle;
+  height: 20px;
+}
+.menuicon {
+  position: fixed;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  bottom: 40px;
+  right: 20px;
+  background-color: var(--red);
+  border-radius: 50%;
+  
+}
+.menuicon img {
+  width: 100%;
+}
