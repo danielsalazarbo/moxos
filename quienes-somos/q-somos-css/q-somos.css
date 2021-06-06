@@ -21,7 +21,7 @@ body {
 
 /* aqui comienza el header */
 .header {
-  background-image: linear-gradient(to right, #017b8b, #00444d);
+  background-image: linear-gradient(to right, #2ccee4, #057f8f);
   text-align: center;
 }
 .header .container {
@@ -36,7 +36,7 @@ body {
 }
 .nav {
   border-radius: 10px;
-  background-color: var(--grem);
+  background-color: #03bcd4ec;
   position: fixed;
   z-index: 1;
   bottom: 30px;
@@ -137,11 +137,10 @@ body {
   font-size: 22px;
 }
 .cont-mision figure {
-  width: 200px;
   box-sizing: border-box;
 }
 .cont-mision figure img {
-  width: 100%;
+  width: 200px;
 }
 
 
@@ -170,6 +169,8 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   padding: 10px;
+  place-items: center
+;
 }
 .comentario-card figure {
   grid-area: figure;
