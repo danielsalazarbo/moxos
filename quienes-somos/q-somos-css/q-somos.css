@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.8px;
   /* display: flex;
   flex-direction: column; */
   position: relative;
@@ -96,171 +96,99 @@ body {
   display: block;
 }
 
-
-
-
-/* aqui comienza el main picture */
-.picture {
-  display: grid;
-  grid-template-columns: 1fr 1500px 1fr;
-  width: 100vw;
+/* aqui comienza quienes somos */
+.q-somos {
+  margin: 30px 10px 50px 10px;
+  text-align: center;
 }
-
-.picture-black {
-  background-color: #040001;
+.q-somos h2 {
+  color: var(--grem);
 }
-.picture-red {
-  background-color: #ee1c25;
-}
-.main-picture {
+.q-somos figure {
   margin: 0;
-  width: 100vw;
-  max-width: 1500px;
-  line-height: 0;
 }
-.main-picture img {
+
+
+
+
+/* aqui comienza historia */
+.historia {
+  margin: 10px;
+  text-align: center;
+}
+.historia h2 {
+  color: var(--grem);
+}
+.historia figure {
+  margin: 0;
+}
+
+
+/* aqui comienza la mision */
+.cont-mision {
+  background-image: linear-gradient(to bottom, #0a9eb1, #058190, #036571, #014a53, #003137);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.mision h3, .vision h3, .valores h3 {
+  color: white;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.cont-mision figure {
+  width: 200px;
+  box-sizing: border-box;
+}
+.cont-mision figure img {
   width: 100%;
 }
 
 
 
-
-/* aqui comienza la seccion de motos */
-.motos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72);
+/* aqui comienzan los comentarios */
+.cont-comentarios h2 {
+  color: var(--grem);
+  margin-top: 50px;
+  text-align: center;
 }
-
-.beneli {
+.comentarios-cards {
   display: grid;
-  grid-template-columns: 100%;
-  justify-items: center;
-  /* margin: 10px; */
-  max-width: 1500px;
-
-}
-.beneli h2 {
-  margin: 30px 0;
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-}
-.beneli-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.beneli-card {
-  max-width: 170px;
-  flex-shrink: 0.5;
-  flex: 1;
-  display: flex;
-  flex-shrink: 0.5;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
-  border-radius: 10px;
-  background: #ffffff;
-  box-shadow:  10px 10px 20px #a5a5a5;
-  border: 2px solid white;
-  cursor: pointer;
-  box-sizing: border;
-}
-.beneli-card:hover {
-  border: 2px solid var(--grem);
-  box-shadow:  30px 30px 60px #646464;
-}
-.beneli-card img {
-  display: block;
-  text-align: center;
-  width: 120px;
-}
-.beneli-card a {
-  display: block;
-  font-size: 15px;
-  font-weight: 500;
-  border: 3px solid var(--grem);
-  padding: 3px 15px 3px 15px;
-  text-decoration: none;
-  color: var(--grem);
-  border-radius: 5px;
-}
-.beneli-card p {
-  font-size: 13px;
-}
-.beneli-card a:hover {
-  background-image: linear-gradient(to right, #dc0714, #ec0045, #eb0078, #d100b2, #8d12eb);
-  color: white;
-  border-radius: 3px solid white;
-}
-.motos-link {
-justify-self: end;
-text-decoration: none;
-color: var(--red);
-padding: 5px 20px;
-box-shadow: 15px 15px 35px #000000;
-}
-.motos-link:hover {
-color: white;
-background-color: var(--red);
-padding: 5px 20px;
-box-shadow: 0px 0px 0px #000000;
-}
-
-/* aqui comienza el mensaje */
-.mensaje p {
-  text-align: center;
-  padding: 50px 10px;
-  max-width: 500px;;
-  font-size: 25px;
-  color: var(--grem);
-  margin: 0 auto;
-}
-
-
-
-/* aqui comienza los beneficios */
-.beneficios h2 {
-  font-size: 30px;
-  /* margin: 50px; */
-  font-style: italic;
-  font-weight: 300;
-}
-.beneficios-cont {
-  margin: 0 auto;
-  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(80%, 400px));
+  padding: 10px;
+  gap: 10px;
   justify-content: center;
-  width: 100%;
-  background-image: linear-gradient(to top, #046875, #11c8e0);
 }
-.beneficios {
-  text-align: center;
-  color: white;
-  margin: 10px;
-  padding: 30px;
-  width: 1150px;
-  max-width: 1150px;
+.comentario-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas: "figure card-title"
+                       "comentario comentario";
+  background-color: turquoise;
+  /* max-width: 400px; */
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
 }
-.beneficios-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 0 40px 0;
+.comentario-card figure {
+  grid-area: figure;
+  width: 80px;
+  margin: 0;
+
 }
-.abc {
-  display: none;
+.comentario-card figure img {
+  border-radius: 50%;
 }
-.beneficios-card p {
-  max-width: 400px;
-  font-size: 20px;
-  line-height: 27px;
+.comentario-card-title {
+  grid-area: card-title;
 }
+.comentario-parrafo {
+  grid-area: comentario;
+}
+
+
+
 
 
 /* aqui comienza la parte del contacto */
