@@ -99,48 +99,24 @@ body {
 
 
 
-/* aqui comienza el main picture */
-.picture {
-  display: grid;
-  grid-template-columns: 1fr 1500px 1fr;
-  width: 100vw;
-}
-
-.picture-black {
-  background-color: #040001;
-}
-.picture-red {
-  background-color: #ee1c25;
-}
-.main-picture {
-  margin: 0;
-  width: 100vw;
-  max-width: 1500px;
-  line-height: 0;
-}
-.main-picture img {
-  width: 100%;
-}
-
-
-
-
 /* aqui comienza la seccion de motos */
 .motos {
-  display: flex;
+  display: grid;
+  justify-content: center;
+  /* display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   background-image: linear-gradient(to right, #004d7a, #008793);
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .beneli {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 100%;
-  justify-items: center;
+  justify-items: center; */
   /* margin: 10px; */
-  max-width: 1500px;
+  max-width: 1550px;
 
 }
 .beneli h2 {
@@ -148,6 +124,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
 }
 .beneli-cards {
   display: flex;
@@ -155,8 +132,8 @@ body {
   flex-wrap: wrap;
 }
 .beneli-card {
-  /* max-width: 170px;
-  flex-shrink: 0.5;
+  /* max-width: 170px; */
+  /* flex-shrink: 0.5;
   flex: 1;
   display: flex;
   flex-shrink: 0.5;
@@ -201,61 +178,60 @@ body {
   color: white;
   border-radius: 3px solid white;
 }
-.motos-link {
-background-color: white;
-text-decoration: none;
-color: var(--red);
-padding: 5px 20px;
-box-shadow: 15px 15px 35px #000000;
-}
-.motos-link:hover {
-color: white;
-background-color: var(--red);
-padding: 5px 20px;
-box-shadow: 0px 0px 0px #000000;
-}
 
-/* aqui comienza el mensaje */
-.mensaje p {
+
+/* aqui comienza porque beneli */
+.porque-beneli {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: minmax(300px, 1500px);
+  justify-content: center;
+}
+.porque-beneli h2 {
   text-align: center;
-  padding: 50px 10px;
-  max-width: 500px;;
-  font-size: 25px;
   color: var(--grem);
-  margin: 0 auto;
+}
+.porque-beneli-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.porque-card-title {
+  color: var(--grem);
 }
 
 
 
 /* aqui comienza los beneficios */
-.beneficios h2 {
+.beneficios-cont h2 {
   font-size: 30px;
-  /* margin: 50px; */
+  text-align: center;
+  color: white;
   font-style: italic;
   font-weight: 300;
 }
 .beneficios-cont {
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(280px, 1500px);
   background-image: linear-gradient(to top, #046875, #11c8e0);
+  padding: 10px;
 }
 .beneficios {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
   color: white;
-  margin: 10px;
-  padding: 30px;
-  width: 1150px;
-  max-width: 1150px;
+  gap: 20px;
 }
 .beneficios-card {
-  display: flex;
+  text-align: center;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 0; */
 }
 .abc {
   display: none;
