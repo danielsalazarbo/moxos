@@ -94,38 +94,24 @@ body {
 }
 .nav-activee {
   display: block;
+
 }
 
 
-
-
-/* aqui comienza el main picture */
-.picture {
-  display: grid;
-  grid-template-columns: 1fr 1500px 1fr;
-  width: 100vw;
-}
-
-.picture-black {
-  background-color: #040001;
-}
-.picture-red {
-  background-color: #ee1c25;
-}
-.main-picture {
+/* aqui comienza la seccion de main */
+.main {
   margin: 0;
-  width: 100vw;
-  max-width: 1500px;
-  line-height: 0;
+  margin-top: 30px;
+  text-align: center;
+  /* margin-bottom: 35px; */
 }
-.main-picture img {
-  width: 100%;
+.main-image {
+  text-align: center;
+  width: 98%;
+  max-width: 1270px;
 }
 
-
-
-
-/* aqui comienza la seccion de motos */
+/* aqui comienza la seccion de beneli */
 .motos {
   margin: 0 auto;
   background-color: rgb(223, 223, 223);
@@ -134,9 +120,12 @@ body {
 }
 
 .beneli {
+  /* display: grid;
+  grid-template-columns: 100%;
+  justify-items: center; */
+  /* margin: 10px; */
+  max-width: 1550px;
   margin: 0 auto;
-  max-width: 1500px;
-  display: grid;
 
 }
 .beneli h2 {
@@ -148,7 +137,7 @@ body {
 }
 .beneli-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
 }
 .beneli-card {
@@ -160,6 +149,7 @@ body {
   box-shadow:  10px 10px 20px #9e9e9e;
   border: 2px solid white;
   cursor: pointer;
+  /* box-sizing: border-box; */
 }
 .beneli-card:hover {
   border: 2px solid var(--grem);
@@ -191,31 +181,26 @@ body {
   color: white;
   border-radius: 3px solid white;
 }
-.motos-link {
-background-color: white;
-text-decoration: none;
-color: var(--red);
-padding: 5px 20px;
-box-shadow: 15px 15px 35px #000000;
-text-align: center;
-justify-self: center;
-}
-.motos-link:hover {
-color: white;
-background-color: var(--red);
-padding: 5px 20px;
-box-shadow: 0px 0px 0px #000000;
-justify-self: center;
-}
 
-/* aqui comienza el mensaje */
-.mensaje p {
+
+/* aqui comienza porque beneli */
+.porque-beneli {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: minmax(300px, 1500px);
+  justify-content: center;
+}
+.porque-beneli h2 {
   text-align: center;
-  padding: 50px 10px;
-  max-width: 500px;;
-  font-size: 25px;
   color: var(--grem);
-  margin: 0 auto;
+}
+.porque-beneli-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.porque-card-title {
+  color: var(--grem);
 }
 
 
