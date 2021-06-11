@@ -98,14 +98,18 @@ body {
 
 /* aqui comienza quienes somos */
 .q-somos {
+  padding: 20px 10px;
+  max-width: 1500px;
   margin: 30px 10px 50px 10px;
   text-align: center;
 }
 .q-somos h2 {
+  margin: 0;
+  grid-area: title;
   color: var(--grem);
 }
 .q-somos figure {
-  margin: 0;
+  margin: 20px 0;
 }
 
 
@@ -113,21 +117,30 @@ body {
 
 /* aqui comienza historia */
 .historia {
-  margin: 10px;
+  padding: 20px 10px;
+  max-width: 1500px;
+  margin: 30px 10px 50px 10px;
   text-align: center;
 }
 .historia h2 {
   color: var(--grem);
 }
 .historia figure {
-  margin: 0;
+  margin: 20px 0;
 }
 
 
 /* aqui comienza la mision */
-.cont-mision {
+.back-mision {
   background-image: linear-gradient(to bottom, #0a9eb1, #058190, #036571, #014a53, #003137);
-  padding: 10px;
+}
+.cont-mision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px 10px;
   text-align: center;
   color: white;
 }
@@ -146,6 +159,9 @@ body {
 
 
 /* aqui comienzan los comentarios */
+.cont-comentarios {
+  /* display: none; */
+}
 .cont-comentarios h2 {
   color: var(--grem);
   margin-top: 50px;
@@ -153,10 +169,12 @@ body {
 }
 .comentarios-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80%, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 10px;
   gap: 10px;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .comentario-card {
   display: grid;
@@ -197,13 +215,13 @@ body {
   padding: 10px 10px;
 }
 .contacto {
-  max-width: 1900px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
 .contacto-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 430px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   /* -webkit-grid-template-colums: repeat(auto-fit, minmax(300px, 450px)); */
   justify-items: center;
   justify-content: center;
@@ -377,4 +395,45 @@ body {
 }
 .menuicon img {
   width: 100%;
+}
+@media  (min-width: 800px){
+  /* quienes somos*/
+  .q-somos {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas: "title title"
+                         "image parrafo";
+    place-items: center;
+    margin: 0 auto;
+  }
+  .q-somos h2 {
+    grid-area: title;
+  }
+  .q-somos figure {
+    grid-area: image;
+  }
+  .q-somos p {
+    grid-area: parrafo;
+  }
+
+  /* Historia */
+  .historia {
+    display: grid;
+    grid-template-areas: "title title"
+                         "image parrafo";
+    place-items: center;
+    margin: 0 auto;
+  }
+  .historia h2 {
+    grid-area: title;
+    /* place-self: center; */
+  }
+  .historia figure {
+    grid-area: image;
+  }
+  .historia p {
+    grid-area: parrafo;
+  }
+
+
 }
