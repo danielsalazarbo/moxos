@@ -177,7 +177,7 @@ body {
   margin: 0 auto;
 }
 .beneli-card a {
-  display: block;
+  display: inline-block;
   font-size: 15px;
   font-weight: 500;
   border: 3px solid var(--grem);
