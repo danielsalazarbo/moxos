@@ -165,11 +165,13 @@ body {
   text-decoration: none;
   color: var(--grem);
   border-radius: 5px;
-  width: fit-content;
+  width: max-content;
   margin: 0 auto;
+  width: ;
 }
 .beneli-card p {
   font-size: 16px;
+  margin: 5px 0;
 }
 .beneli-card a:hover {
   background-image: linear-gradient(to right, #dc0714, #ec0045, #eb0078, #d100b2, #8d12eb);

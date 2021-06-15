@@ -163,6 +163,9 @@ body {
   display: grid;
   justify-items: center;
 }
+.beneli-card-title {
+  margin-bottom: 20px;
+}
 .beneli-card:hover {
   border: 2px solid var(--grem);
   box-shadow:  10px 10px 60px rgb(248, 222, 214);
@@ -182,9 +185,11 @@ body {
   text-decoration: none;
   color: var(--grem);
   border-radius: 5px;
+  width: fit-content;
 }
 .beneli-card p {
   font-size: 16px;
+  margin: 5px 0px;
 }
 .beneli-card a:hover {
   background-image: linear-gradient(to right, #dc0714, #ec0045, #eb0078, #d100b2, #8d12eb);
@@ -199,6 +204,7 @@ padding: 5px 20px;
 box-shadow: 15px 15px 35px #000000;
 text-align: center;
 justify-self: center;
+width: fit-content;
 }
 .motos-link:hover {
 color: white;
